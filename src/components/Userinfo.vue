@@ -1,41 +1,22 @@
 <template>
 	<section class="content-wrap">
-
-		<div class="button" @click="toupdata()" v-show="isReadOnly">修改资料</div>
 		<div class="from-wrap">
 			<div class="ipunt-wrap">
 				<label for="">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</label>
-				<input type="text" placeholder="如：张三" :readonly="isReadOnly" v-model="username" autofocus>
-			</div>
-			<div class="ipunt-wrap">
-				<label for="">身份证号:</label>
-				<input type="text" placeholder="请填17位有效身份证号" :readonly="isReadOnly" v-model="idcard">
+				<input type="text" value="马玉茹">
 			</div>
 			<div class="ipunt-wrap">
 				<label for="">出生日期:</label>
-				<input type="text" placeholder="如：1995-09-26" :readonly="isReadOnly" v-model="bdate">
-			</div>
-			<div class="ipunt-wrap">
-				<label for="">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:</label>
-				<input type="text" placeholder="男 或 女" :readonly="isReadOnly" v-model="sex">
+				<input type="text" value="1994-12-31">
 			</div>
 			<div class="ipunt-wrap">
 				<label for="">电子邮件:</label>
-				<input type="text" placeholder="请填有效的电子邮箱" :readonly="isReadOnly" v-model="email">
-			</div>
-			<div class="ipunt-wrap">
-				<label for="">通信地址:</label>
-				<input type="text" placeholder="请填正确的地址" :readonly="isReadOnly" v-model="address">
+				<input type="text" value="maryru1231@163.com">
 			</div>
 			<div class="ipunt-wrap">
 				<label for="">电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话:</label>
-				<input type="text" placeholder="请填有效的手机号" :readonly="isReadOnly" v-model="phone">
+				<input type="text" value="18237714532">
 			</div>
-			<transition name="pull-up">
-				<div class="ipunt-button" v-show="!isReadOnly">
-					<a class="gv" href="javascript:;" @click="updataInfo()">修改</a>
-				</div>
-			</transition>
 		</div>
 	</section>
 </template>
@@ -175,7 +156,6 @@ a.gv:hover {
 	border: none;
 	outline: none;
 	background: none;
-	border-bottom: 1px solid #fff;
 	margin-bottom: 30px;
 	width: 300px;
 	height: 30px;

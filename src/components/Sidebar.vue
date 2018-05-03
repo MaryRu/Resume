@@ -21,18 +21,18 @@ export default {
 				{content: '个人经历', url: '/sellhouse'},
 				{content: '项目一', url: '/solicithouse'},
 				{content: '项目二', url: '/buyhouse'},
-				{content: '项目三', url: '/userinfo'},
+				// {content: '项目三', url: '/userinfo'},
 				{content: '个人技能', url: '/modifypass'},
-				{content: '联系我', url: '/messageboard'}
+				{content: '联系我', url: '/userinfo'}
 			],
 			adminSidebar: [
-				{content: '注意事项', url: '/matters'},
-				{content: '出租信息管理', url: '/renthouse'},
-				{content: '出售信息管理', url: '/sellhouse'},
-				{content: '求租信息管理', url: '/solicithouse'},
-				{content: '购买信息管理', url: '/buyhouse'},
-				{content: '会员信息管理', url: '/userlist'},
-				{content: '留言板管理', url: '/msgborlist'}
+				// {content: '注意事项', url: '/matters'},
+				// {content: '出租信息管理', url: '/renthouse'},
+				// {content: '出售信息管理', url: '/sellhouse'},
+				// {content: '求租信息管理', url: '/solicithouse'},
+				// {content: '购买信息管理', url: '/buyhouse'},
+				// {content: '会员信息管理', url: '/userlist'},
+				// {content: '留言板管理', url: '/msgborlist'}
 			]
 		}
 	},
