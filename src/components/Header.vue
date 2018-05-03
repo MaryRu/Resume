@@ -2,8 +2,6 @@
 	<div id="header">
 		<div class="logo">
 			关于<span style="font-size: 20px;font-weight:normal">马玉茹</span>
-			<!-- <span>v1.0</span>
-			<span v-show="isAdmin">[管理员]</span> -->
 		</div>
 		<div class="user" @mouseover="showUserX()">
 			<img class="avatar" src="../assets/images/avatar.png" alt="">
@@ -15,7 +13,6 @@
 <script>
 
 export default {
-	
 	data() {
 		return {
 			isAdmin: false,

@@ -16,19 +16,6 @@ export default new Router({
 	   	{ 
 	   		path: '/menu', 
 	   		component: Menu,
-	   		children : [{
-	   			path : '/customer-login',
-	    		// 懒加载
-	    		component : resolve => require(['@/components/Login.vue'],resolve)
-	    	},{
-	    		path : '/admin-login',
-	    		// 懒加载
-	    		component : resolve => require(['@/components/Login.vue'],resolve)
-	    	},{
-	    		path : '/regist',
-	    		// 懒加载
-	    		component : resolve => require(['@/components/Regist.vue'],resolve)
-	    	}]
 	    },
 	    {
 	    	path: '/home',
@@ -45,14 +32,10 @@ export default new Router({
 	   			path : '/sellhouse',
 	    		// 懒加载
 	    		component : resolve => require(['components/Sellhouse.vue'],resolve)
-	    	},,{
+	    	},{
 	   			path : '/solicithouse',
 	    		// 懒加载
 	    		component : resolve => require(['components/Solicithouse.vue'],resolve)
-	    	},{
-	   			path : '/buyhouse',
-	    		// 懒加载
-	    		component : resolve => require(['components/Buyhouse.vue'],resolve)
 	    	},{
 	   			path : '/userinfo',
 	    		// 懒加载
@@ -65,14 +48,6 @@ export default new Router({
 	   			path : '/messageboard',
 	    		// 懒加载
 	    		component : resolve => require(['components/Messageboard.vue'],resolve)
-	    	},{
-	    		path : '/userlist',
-	    		// 懒加载
-	    		component : resolve => require(['components/userlist.vue'],resolve)
-	    	},{
-	    		path : '/msgborlist',
-	    		// 懒加载
-	    		component : resolve => require(['components/magborlist.vue'],resolve)
 	    	}
 	    	]
 		}
